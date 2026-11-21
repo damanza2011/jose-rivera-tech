@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Jose Rivera Tech — Accesorios Tecnológicos & Repuestos de Conveniencia
+   Cyber Luxury Gold & Obsidian Dark Theme
+   ========================================================================== */
+
+:root {
+  --color-negro-profundo: #08080A;
+  --color-negro-superficie: #101014;
+  --color-negro-tarjeta: #15151B;
+  --color-dorado-principal: #D4AF37;
+  --color-dorado-brillante: #F59E0B;
+  --color-dorado-champan: #F3E8D2;
+  --color-dorado-glow: rgba(212, 175, 55, 0.25);
+  --color-verde-wa: #25D366;
+}
+
+/* Tipografía Tecnológica y Suavizado */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-negro-profundo);
+  color: #FFFFFF;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Glassmorphism Oscuro con Reflejo Dorado */
+.glass-cyber-dark {
+  background: rgba(16, 16, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.glass-modal-dark {
+  background: rgba(13, 13, 17, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Shimmer Dorado para Botones de Acción de Alto Valor */
+.shimmer-gold {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-gold::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg);
+  animation: shimmerGoldMove 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+@keyframes shimmerGoldMove {
+  0% { transform: translate(-100%, -100%) rotate(30deg); }
+  30%, 100% { transform: translate(100%, 100%) rotate(30deg); }
+}
+
+/* Sombra de Acento Dorado */
+.shadow-gold {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.22);
+}
+
+.shadow-gold-sm {
+  box-shadow: 0 4px 15px -2px rgba(212, 175, 55, 0.28);
+}
+
+/* Animación de micro-interacción para el carrito al agregar */
+@keyframes bounceShort {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.28); }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 0.35s ease-in-out;
+}
+
+/* Bloqueo de Scroll al Abrir Cajones */
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
+/* Scrollbars Estilo Tech Minimalista */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08080A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272732;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dorado-principal);
+}
+
+/* Safe areas para navegación móvil en iPhone con Dynamic Island y barra inferior */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}

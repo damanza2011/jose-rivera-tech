@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Jose Rivera Tech | Accesorios Tecnológicos & Repuestos de Conveniencia</title>
+  
+  <meta name="description" content="Isla y tienda especializada en accesorios de tecnología, cargadores GaN, cables reforzados, controles remotos Smart TV y aire, vidrios y soportes. WhatsApp: +57 301 476 8000.">
+  <meta name="keywords" content="Jose Rivera Tech, cargador iPhone, cable tipo C, cargador carro, control universal Samsung LG, control aire acondicionado, vidrio templado ceramico, audifonos bluetooth, Barranquilla, Colombia">
+  <meta name="author" content="Jose Rivera Tech">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jose Rivera Tech | Accesorios y Repuestos de Tecnología">
+  <meta property="og:description" content="Cargadores rápidos, cables blindados, controles de TV y repuestos de conveniencia. Retiro en isla o envío rápido.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN v3 con Paleta Cyber Gold & Obsidian Black -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#08080A',
+            'obsidian-card': '#101014',
+            'obsidian-border': '#1F1F28',
+            dorado: '#D4AF37',
+            'dorado-bright': '#F59E0B',
+            'dorado-light': '#FDF4DC',
+            'dorado-glow': 'rgba(212, 175, 55, 0.22)',
+            carbon: '#181820',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            tech: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Hoja de Estilos Desacoplada -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-obsidian text-slate-100 font-sans antialiased selection:bg-dorado selection:text-black relative overflow-x-hidden min-h-screen flex flex-col">
+
+  <!-- Barra Superior de Estatus & Contacto Oficial -->
+  <aside class="bg-black/90 text-slate-300 text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center tracking-wider font-medium flex items-center justify-between border-b border-dorado/20 relative z-40">
+    <div class="flex items-center gap-2 mx-auto sm:mx-0">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
+      <span class="font-bold text-white uppercase tracking-wider">Abierto en Local / Isla Centro Comercial</span>
+      <span class="hidden md:inline text-slate-400">· Atención y Envíos Inmediatos</span>
+    </div>
+    <div class="hidden sm:flex items-center gap-3">
+      <span class="text-slate-400">Asesoría Directa:</span>
+      <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="font-bold text-dorado hover:text-dorado-bright flex items-center gap-1 transition-colors">
+        <span>WhatsApp: 301 4768000</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. Header Inteligente Sticky -->
+  <header class="sticky top-0 z-40 glass-cyber-dark transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
+      <div class="flex items-center justify-between gap-3 sm:gap-6">
+        
+        <!-- Logo de Marca: Jose Rivera Tech (Dorado y Negro) -->
+        <a href="#" class="flex items-center gap-2.5 shrink-0 group focus:outline-none" aria-label="Inicio Jose Rivera Tech">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-dorado via-dorado-bright to-amber-600 p-[1.5px] shadow-gold-sm">
+            <div class="w-full h-full bg-obsidian rounded-[14px] flex items-center justify-center text-dorado font-tech font-extrabold text-lg group-hover:scale-105 transition-transform">
+              JR
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-tech text-base sm:text-xl font-bold tracking-tight text-white group-hover:text-dorado transition-colors">
+                JOSE RIVERA
+              </span>
+              <span class="text-[9px] font-bold uppercase tracking-widest text-black bg-dorado px-1.5 py-0.5 rounded-md font-tech">
+                TECH
+              </span>
+            </div>
+            <span class="text-[9px] sm:text-[10px] tracking-wider text-slate-400 uppercase font-medium -mt-0.5">
+              Accesorios & Repuestos de Conveniencia
+            </span>
+          </div>
+        </a>
+
+        <!-- Barra de Búsqueda Prominente con Placeholder Rotativo (Desktop & Tablet) -->
+        <div class="hidden md:flex flex-1 max-w-xl relative">
+          <div class="relative w-full">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <i data-lucide="search" class="w-4 h-4"></i>
+            </span>
+            <input type="text" 
+                   id="mainSearchInput" 
+                   placeholder="Busca tu control remoto, cable iPhone, cargador de carro..." 
+                   class="w-full pl-10 pr-9 py-2.5 rounded-full bg-black/60 border border-slate-700/80 text-white text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:border-dorado focus:ring-1 focus:ring-dorado transition-all">
+            <button id="clearSearchBtn" class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white" title="Limpiar búsqueda">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Acciones: Carrito y WhatsApp -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          
+          <!-- Botón de Carrito con Contador Reactivo -->
+          <button id="openCartBtn" onclick="Cart.openDrawer()" 
+                  class="relative p-2.5 sm:px-4 sm:py-2.5 rounded-full bg-slate-900 border border-slate-700 hover:border-dorado text-white transition-all flex items-center gap-2 active:scale-95 shadow-sm"
+                  aria-label="Abrir carrito de compras">
+            <i data-lucide="shopping-cart" class="w-5 h-5 text-dorado"></i>
+            <span class="hidden sm:inline text-xs font-bold">Carrito</span>
+            <span class="cart-counter-badge hidden absolute -top-1 -right-1 bg-dorado text-black text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-md">
+              0
+            </span>
+          </button>
+
+          <!-- Botón Directo WhatsApp -->
+          <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20estoy%20viendo%20su%20cat%C3%A1logo%20y%20deseo%20hacer%20una%20consulta." 
+             target="_blank" rel="noopener noreferrer" 
+             class="shimmer-gold inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold tracking-wide uppercase transition-all shadow-sm active:scale-95">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            <span class="hidden sm:inline">WhatsApp</span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Barra de Búsqueda Móvil (visible sólo en pantallas pequeñas) -->
+      <div class="mt-2.5 md:hidden relative">
+        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+          <i data-lucide="search" class="w-4 h-4"></i>
+        </span>
+        <input type="text" 
+               id="mobileSearchInput" 
+               oninput="document.getElementById('mainSearchInput').value = this.value; ProductFilters.searchQuery = this.value.toLowerCase(); ProductFilters.applyFilters();"
+               placeholder="Busca cargador, cable, control, audífonos..." 
+               class="w-full pl-9 pr-4 py-2 rounded-xl bg-black/60 border border-slate-700 text-white text-xs placeholder:text-slate-400 focus:outline-none focus:border-dorado">
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-1">
+
+    <!-- 2. Hero Banner: Soluciones Rápidas de Conveniencia Tecnológica -->
+    <section class="relative py-8 sm:py-12 bg-gradient-to-b from-black via-obsidian-card to-obsidian border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+          
+          <div class="space-y-3 text-center lg:text-left max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dorado/15 border border-dorado/40 text-dorado text-[11px] font-bold uppercase tracking-wider">
+              <span>⚡ Conveniencia Tech Inmediata</span>
+              <span>·</span>
+              <span>WhatsApp +57 301 476 8000</span>
+            </div>
+            
+            <h1 class="font-tech text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight">
+              ¿Te quedaste sin carga o se te dañó el control? <span class="text-dorado">Soluciónalo aquí en minutos.</span>
+            </h1>
+
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Catálogo express para retiro inmediato en isla comercial o entrega rápida a domicilio. Cables reforzados antinudos, cargadores GaN de alta potencia, repuestos para TV / aire y accesorios de protección.
+            </p>
+          </div>
+
+          <!-- 3 Tarjetas de Confianza Inmediata -->
+          <div class="grid grid-cols-3 gap-2.5 sm:gap-3 w-full lg:w-auto">
+            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
+              <span class="text-xl sm:text-2xl block mb-1">⚡</span>
+              <strong class="text-[11px] sm:text-xs font-bold text-white block">Entrega Hoy</strong>
+              <span class="text-[10px] text-slate-400">Sin esperas largas</span>
+            </div>
+            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
+              <span class="text-xl sm:text-2xl block mb-1">🛡️</span>
+              <strong class="text-[11px] sm:text-xs font-bold text-dorado block">Garantía</strong>
+              <span class="text-[10px] text-slate-400">Equipos probados</span>
+            </div>
+            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
+              <span class="text-xl sm:text-2xl block mb-1">💬</span>
+              <strong class="text-[11px] sm:text-xs font-bold text-emerald-400 block">Asesoría</strong>
+              <span class="text-[10px] text-slate-400">Atención WhatsApp</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Barra de Filtros Facetados (Categorías y Compatibilidad) -->
+    <section class="sticky top-[68px] sm:top-[76px] z-30 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 py-3 shadow-md">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-2.5">
+        
+        <!-- Fila 1: Píldoras de Categoría Principal -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs">
+          <button class="category-filter-pill active-cat-pill px-4 py-2 rounded-full border border-dorado bg-dorado text-black font-bold shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="todos">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            <span>Todos</span>
+          </button>
+          
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="carga">
+            <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>Carga y Cables</span>
+          </button>
+
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="audio">
+            <i data-lucide="headphones" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span>Audio y Manos Libres</span>
+          </button>
+
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="repuestos">
+            <i data-lucide="tv" class="w-3.5 h-3.5 text-rose-400"></i>
+            <span>Controles y Repuestos</span>
+          </button>
+
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="gadgets">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Protección y Gadgets</span>
+          </button>
+        </div>
+
+        <!-- Fila 2: Selector Rápido de Compatibilidad y Ordenamiento -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/60">
+          
+          <!-- Compatibilidad -->
+          <div class="flex items-center gap-1.5 overflow-x-auto text-[11px]">
+            <span class="text-slate-400 text-[10px] uppercase font-bold mr-1 shrink-0">Equipo:</span>
+            
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-dorado bg-dorado/20 text-dorado font-semibold shrink-0 transition-colors" data-compat="all">
+              Todos
+            </button>
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="apple">
+              🍎 Apple / iOS
+            </button>
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="android">
+              🤖 Android
+            </button>
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="tv">
+              📺 TV & Hogar
+            </button>
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="carro">
+              🚗 Carro
+            </button>
+          </div>
+
+          <!-- Contador y Selector de Orden -->
+          <div class="flex items-center gap-2 text-xs">
+            <span id="resultsCountBadge" class="text-slate-400 text-[11px] font-medium hidden sm:inline">0 productos</span>
+            <select id="catalogSortSelect" class="bg-black border border-slate-700 text-slate-300 text-[11px] rounded-lg px-2 py-1 focus:outline-none focus:border-dorado">
+              <option value="featured">Destacados</option>
+              <option value="price-low">Precio: Menor a Mayor</option>
+              <option value="price-high">Precio: Mayor a Menor</option>
+              <option value="rating">Mejor Calificados</option>
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Cuadrícula de Productos (Catálogo Dinámico) -->
+    <section class="py-8 sm:py-12 bg-obsidian">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        
+        <!-- Contenedor del Grid Dinámico -->
+        <div id="productsGridContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Inyectado reactivamente por filters.js -->
+        </div>
+
+        <!-- Estado Vacío (Empty State) -->
+        <div id="catalogEmptyState" class="hidden text-center py-16 px-4 space-y-4 max-w-md mx-auto">
+          <div class="w-16 h-16 rounded-full bg-slate-900 border border-slate-800 text-dorado flex items-center justify-center mx-auto text-2xl">
+            🔍
+          </div>
+          <h3 class="font-tech text-lg font-bold text-white">No encontramos productos coincidentes</h3>
+          <p class="text-xs text-slate-400">
+            Prueba ajustando los términos de búsqueda o cambiando el filtro de compatibilidad. También puedes consultarnos por WhatsApp.
+          </p>
+          <div class="pt-2 flex flex-col sm:flex-row gap-2 justify-center">
+            <button onclick="ProductFilters.resetAllFilters()" class="px-5 py-2.5 rounded-full bg-dorado text-black font-bold text-xs uppercase tracking-wider active:scale-95 transition-all">
+              Ver Todo el Catálogo
+            </button>
+            <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20estoy%20buscando%20un%20producto%20espec%C3%ADfico." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-slate-800 text-white font-bold text-xs uppercase tracking-wider active:scale-95 transition-all">
+              Preguntar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. Drawer Desplegable del Carrito de Compras -->
+  <div id="cartBackdrop" 
+       class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300"
+       onclick="if(event.target === this) Cart.closeDrawer()"
+       aria-hidden="true">
+    
+    <div id="cartDrawer" 
+         class="fixed top-0 right-0 bottom-0 w-full sm:w-[450px] bg-obsidian-card h-full shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out border-l border-slate-800 overflow-hidden z-50">
+      
+      <!-- Encabezado del Carrito -->
+      <div class="p-4 sm:p-5 bg-black border-b border-slate-800 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-dorado/20 text-dorado flex items-center justify-center font-bold">
+            🛒
+          </div>
+          <div>
+            <h3 class="font-tech text-base font-bold text-white">Tu Pedido Tech</h3>
+            <p class="text-[11px] text-slate-400">Jose Rivera Tech · Envíos o Retiro Inmediato</p>
+          </div>
+        </div>
+        <button onclick="Cart.closeDrawer()" class="p-2 text-slate-400 hover:text-white rounded-lg transition-colors" aria-label="Cerrar carrito">
+          ✕
+        </button>
+      </div>
+
+      <!-- Lista de Ítems en Carrito -->
+      <div class="flex-1 overflow-y-auto p-4 space-y-3" id="cartItemsList">
+        <!-- Renderizado dinámico desde cart.js -->
+      </div>
+
+      <!-- Estado Vacío del Carrito -->
+      <div id="cartEmptyState" class="hidden flex-1 flex flex-col items-center justify-center p-6 text-center space-y-3">
+        <span class="text-4xl">🛍️</span>
+        <h4 class="font-tech text-base font-bold text-white">Tu carrito está vacío</h4>
+        <p class="text-xs text-slate-400 max-w-xs">
+          Agrega cables, cargadores, controles o audífonos para armar tu cotización con envío inmediato.
+        </p>
+        <button onclick="Cart.closeDrawer()" class="px-5 py-2.5 rounded-full bg-dorado text-black font-bold text-xs uppercase tracking-wider">
+          Explorar Catálogo
+        </button>
+      </div>
+
+      <!-- Checkout y Selector de Entrega (Footer del Carrito) -->
+      <div id="cartFooter" class="p-4 bg-black border-t border-slate-800 space-y-3.5 shrink-0">
+        
+        <!-- Selector Método de Entrega -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+            Método de Entrega:
+          </label>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
+              <input type="radio" name="checkoutDeliveryMethod" value="local" checked class="accent-dorado">
+              <span class="font-semibold text-white text-[11px]">🏢 Retiro en Local</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
+              <input type="radio" name="checkoutDeliveryMethod" value="domicilio" class="accent-dorado">
+              <span class="font-semibold text-white text-[11px]">🛵 Domicilio Rápido</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Campos de Datos del Cliente -->
+        <div class="space-y-2">
+          <input type="text" id="checkoutCustomerName" placeholder="Tu Nombre Completo..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+          
+          <div id="checkoutAddressContainer" class="hidden">
+            <input type="text" id="checkoutCustomerAddress" placeholder="Dirección exacta de entrega y ciudad..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+          </div>
+
+          <input type="text" id="checkoutCustomerNotes" placeholder="Nota especial (ej: modelo exacto de celular o TV)..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+        </div>
+
+        <!-- Subtotal -->
+        <div class="flex items-center justify-between pt-2 border-t border-slate-800">
+          <span class="text-xs text-slate-400">Total a Pagar:</span>
+          <strong id="cartSubtotalAmount" class="font-tech text-xl font-extrabold text-dorado">
+            $ 0
+          </strong>
+        </div>
+
+        <!-- Botón Checkout WhatsApp -->
+        <button id="cartCheckoutBtn" 
+                class="shimmer-gold w-full py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span>Confirmar Pedido vía WhatsApp</span>
+        </button>
+
+        <p class="text-[10px] text-center text-slate-400">
+          Atención inmediata · WhatsApp Oficial: <strong>+57 301 476 8000</strong>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Botón Flotante de Carrito en Móvil (Dock Inferior) -->
+  <div class="fixed bottom-5 right-4 z-40 flex items-center gap-2">
+    <!-- Botón Flotante Carrito -->
+    <button onclick="Cart.openDrawer()" 
+            class="relative px-4 py-3 rounded-full bg-dorado text-black font-extrabold text-xs shadow-gold flex items-center gap-2 active:scale-95 transition-all">
+      <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+      <span>Ver Carrito</span>
+      <span class="cart-counter-badge hidden bg-black text-dorado text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center">
+        0
+      </span>
+    </button>
+  </div>
+
+  <!-- 6. Footer Oficial -->
+  <footer class="bg-black text-slate-300 pt-12 pb-16 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-slate-800/80">
+        
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="font-tech text-xl font-bold text-white">JOSE RIVERA TECH</span>
+            <span class="text-[9px] font-bold text-black bg-dorado px-1.5 py-0.5 rounded uppercase">Oficial</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+            Especialistas en accesorios tecnológicos de alta durabilidad, cargadores inteligentes GaN, cables reforzados, audio y repuestos de conveniencia para tu celular y hogar.
+          </p>
+          <div class="pt-1 flex items-center gap-3">
+            <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 font-bold hover:underline flex items-center gap-1">
+              <span>WhatsApp: +57 301 476 8000</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 space-y-2">
+          <h4 class="font-tech text-sm font-bold text-white uppercase tracking-wider">Atención y Entregas</h4>
+          <p class="text-xs text-slate-400">
+            • Retiro inmediato en isla comercial<br>
+            • Envíos rápidos en la ciudad y a nivel nacional<br>
+            • Horario de atención: Lunes a Sábado 9:00 AM - 8:00 PM
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="font-tech text-sm font-bold text-white uppercase tracking-wider">Garantía Directa</h4>
+          <p class="text-xs text-slate-400">
+            Todos nuestros productos cuentan con garantía por defectos de fábrica. Comprueba el funcionamiento de tus cables y cargadores al instante.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3 text-center sm:text-left">
+        <p>© 2026 Jose Rivera Tech · Todos los derechos reservados.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="text-dorado hover:underline">Soporte WhatsApp: 301 4768000</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script src="js/products.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/filters.js"></script>
+
+  <!-- Inicialización de la SPA -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Inicializar Lucide Icons
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      // 2. Inicializar Carrito Reactivo
+      Cart.init();
+
+      // 3. Inicializar Motor de Búsqueda y Filtros
+      ProductFilters.init();
+
+      // Re-render Lucide Icons tras cargar el catálogo dinámico
+      setTimeout(() => {
+        if (window.lucide) lucide.createIcons();
+      }, 100);
+    });
+  </script>
+
+</body>
+</html>
