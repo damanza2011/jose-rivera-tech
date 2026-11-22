@@ -1,54 +1,107 @@
 /* ==========================================================================
-   Jose Rivera Tech — Accesorios Tecnológicos & Repuestos de Conveniencia
-   Cyber Luxury Gold & Obsidian Dark Theme
+   Jose Rivera Tech — Accesorios para Celulares & Repuestos de Alta Gama
+   Ultra-VIP Black & 24K Gold Haute Tech Theme
    ========================================================================== */
 
 :root {
-  --color-negro-profundo: #08080A;
-  --color-negro-superficie: #101014;
-  --color-negro-tarjeta: #15151B;
-  --color-dorado-principal: #D4AF37;
-  --color-dorado-brillante: #F59E0B;
-  --color-dorado-champan: #F3E8D2;
-  --color-dorado-glow: rgba(212, 175, 55, 0.25);
-  --color-verde-wa: #25D366;
+  --color-negro-obsidian: #050507;
+  --color-negro-card: #0D0D12;
+  --color-negro-card-hover: #14141B;
+  --color-oro-puro: #D4AF37;
+  --color-oro-brillante: #F5D061;
+  --color-oro-oscuro: #AA771C;
+  --color-oro-champan: #FFF2B2;
+  --color-oro-glow: rgba(212, 175, 55, 0.28);
+  --color-borde-oro: rgba(212, 175, 55, 0.25);
 }
 
-/* Tipografía Tecnológica y Suavizado */
+/* Tipografía de Lujo */
+.font-vip {
+  font-family: 'Space Grotesk', 'Cinzel', sans-serif;
+  letter-spacing: -0.02em;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-negro-profundo);
+  background-color: var(--color-negro-obsidian);
   color: #FFFFFF;
 }
 
 body {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 100% 40%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 0% 70%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
 }
 
-/* Glassmorphism Oscuro con Reflejo Dorado */
-.glass-cyber-dark {
-  background: rgba(16, 16, 20, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+/* Texto Metálico Dorado VIP */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF5C0 0%, #D4AF37 35%, #F7D774 70%, #AA771C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.glass-modal-dark {
-  background: rgba(13, 13, 17, 0.96);
+.text-gold-light {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5D061 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Bordes y Reflejos Metálicos de Oro */
+.border-gold-vip {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.border-gold-glow {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 0 20px -3px rgba(212, 175, 55, 0.25);
+}
+
+/* Glassmorphism de Alta Gama */
+.glass-vip-header {
+  background: rgba(8, 8, 12, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
 }
 
-/* Shimmer Dorado para Botones de Acción de Alto Valor */
-.shimmer-gold {
+.glass-vip-card {
+  background: linear-gradient(145deg, rgba(16, 16, 22, 0.95) 0%, rgba(10, 10, 14, 0.98) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-vip-card:hover {
+  border-color: rgba(212, 175, 55, 0.65);
+  box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.22), 0 0 15px rgba(212, 175, 55, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Botón Dorado de Alta Gama con Shimmer */
+.btn-gold-vip {
+  background: linear-gradient(135deg, #F9DE7B 0%, #D4AF37 50%, #B8861B 100%);
+  color: #050507;
+  font-weight: 800;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 20px -2px rgba(212, 175, 55, 0.35);
+  transition: all 0.3s ease;
 }
 
-.shimmer-gold::after {
+.btn-gold-vip:hover {
+  background: linear-gradient(135deg, #FFF0A3 0%, #E5BE4B 50%, #C99527 100%);
+  box-shadow: 0 8px 30px -2px rgba(212, 175, 55, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-gold-vip::after {
   content: '';
   position: absolute;
   top: -50%;
@@ -58,64 +111,70 @@ body {
   background: linear-gradient(
     60deg,
     transparent 20%,
-    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0.45) 50%,
     transparent 80%
   );
   transform: rotate(30deg);
-  animation: shimmerGoldMove 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: shimmerVIP 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 
-@keyframes shimmerGoldMove {
+@keyframes shimmerVIP {
   0% { transform: translate(-100%, -100%) rotate(30deg); }
-  30%, 100% { transform: translate(100%, 100%) rotate(30deg); }
+  25%, 100% { transform: translate(100%, 100%) rotate(30deg); }
 }
 
-/* Sombra de Acento Dorado */
-.shadow-gold {
-  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.22);
+/* Halo Dorado Suave para el Logotipo */
+.logo-halo {
+  position: relative;
 }
 
-.shadow-gold-sm {
-  box-shadow: 0 4px 15px -2px rgba(212, 175, 55, 0.28);
+.logo-halo::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulseHalo 4s ease-in-out infinite alternate;
 }
 
-/* Animación de micro-interacción para el carrito al agregar */
-@keyframes bounceShort {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.28); }
+@keyframes pulseHalo {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  100% { transform: scale(1.15); opacity: 0.85; }
 }
 
+/* Badge de Contador */
 .animate-bounce-short {
   animation: bounceShort 0.35s ease-in-out;
 }
 
-/* Bloqueo de Scroll al Abrir Cajones */
-body.drawer-open {
-  overflow: hidden !important;
-  touch-action: none;
+@keyframes bounceShort {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
 }
 
-/* Scrollbars Estilo Tech Minimalista */
+/* Scrollbar Dorado y Negro */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #08080A;
+  background: #050507;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #272732;
+  background: #252530;
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-dorado-principal);
+  background: var(--color-oro-puro);
 }
 
-/* Safe areas para navegación móvil en iPhone con Dynamic Island y barra inferior */
-.safe-bottom {
-  padding-bottom: env(safe-area-inset-bottom, 16px);
+/* Bloqueo Scroll Drawer */
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
 }

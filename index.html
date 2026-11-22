@@ -3,40 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Jose Rivera Tech | Accesorios Tecnológicos & Repuestos de Conveniencia</title>
+  <title>Jose Rivera Tech | JR Accesorios para Celulares — Colección de Alta Gama</title>
   
-  <meta name="description" content="Isla y tienda especializada en accesorios de tecnología, cargadores GaN, cables reforzados, controles remotos Smart TV y aire, vidrios y soportes. WhatsApp: +57 301 476 8000.">
-  <meta name="keywords" content="Jose Rivera Tech, cargador iPhone, cable tipo C, cargador carro, control universal Samsung LG, control aire acondicionado, vidrio templado ceramico, audifonos bluetooth, Barranquilla, Colombia">
+  <meta name="description" content="JR Accesorios para Celulares — Jose Rivera Tech. Colección VIP de accesorios de alta gama: cargadores rápidos GaN, cables blindados, audio de alta fidelidad, repuestos y vidrios cerámicos. WhatsApp: +57 301 476 8000.">
+  <meta name="keywords" content="Jose Rivera Tech, JR accesorios para celulares, cargador GaN, cable tipo C, cargador carro turbo, control remoto TV, control aire, vidrio ceramico, Colombia, Barranquilla">
   <meta name="author" content="Jose Rivera Tech">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Jose Rivera Tech | Accesorios y Repuestos de Tecnología">
-  <meta property="og:description" content="Cargadores rápidos, cables blindados, controles de TV y repuestos de conveniencia. Retiro en isla o envío rápido.">
+  <meta property="og:title" content="JR Accesorios para Celulares — Jose Rivera Tech">
+  <meta property="og:description" content="Colección VIP de accesorios y repuestos tecnológicos de alta gama. Retiro inmediato en isla o envíos rápidos en Colombia.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-jr.jpg">
 
-  <!-- Google Fonts: Plus Jakarta Sans + Space Grotesk -->
+  <!-- Google Fonts: Space Grotesk + Plus Jakarta Sans + Cinzel -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN v3 con Paleta Cyber Gold & Obsidian Black -->
+  <!-- Tailwind CSS CDN v3 con Paleta Cyber Gold & Obsidian Black VIP -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            obsidian: '#08080A',
-            'obsidian-card': '#101014',
-            'obsidian-border': '#1F1F28',
+            obsidian: '#050507',
+            'obsidian-dark': '#09090D',
+            'obsidian-card': '#0E0E14',
+            'obsidian-border': '#1F1F2A',
             dorado: '#D4AF37',
-            'dorado-bright': '#F59E0B',
-            'dorado-light': '#FDF4DC',
-            'dorado-glow': 'rgba(212, 175, 55, 0.22)',
-            carbon: '#181820',
+            'dorado-bright': '#F5D061',
+            'dorado-dark': '#AA771C',
+            'dorado-champan': '#FFF2B2',
+            carbon: '#14141B',
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            vip: ['"Cinzel"', 'serif'],
             tech: ['"Space Grotesk"', 'sans-serif'],
           }
         }
@@ -52,99 +55,105 @@
 </head>
 <body class="bg-obsidian text-slate-100 font-sans antialiased selection:bg-dorado selection:text-black relative overflow-x-hidden min-h-screen flex flex-col">
 
-  <!-- Barra Superior de Estatus & Contacto Oficial -->
-  <aside class="bg-black/90 text-slate-300 text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center tracking-wider font-medium flex items-center justify-between border-b border-dorado/20 relative z-40">
+  <!-- Barra Superior VIP: Garantía y WhatsApp Oficial -->
+  <aside class="bg-black text-slate-300 text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center tracking-wider font-medium flex items-center justify-between border-b border-dorado/25 relative z-40">
     <div class="flex items-center gap-2 mx-auto sm:mx-0">
       <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
-      <span class="font-bold text-white uppercase tracking-wider">Abierto en Local / Isla Centro Comercial</span>
-      <span class="hidden md:inline text-slate-400">· Atención y Envíos Inmediatos</span>
+      <span class="font-bold text-white uppercase tracking-widest text-[10px] sm:text-xs">
+        Isla Comercial & Tienda VIP Oficial
+      </span>
+      <span class="hidden md:inline text-dorado">✦</span>
+      <span class="hidden md:inline text-slate-300">Equipos y Repuestos de Calidad Certificada</span>
     </div>
+    
     <div class="hidden sm:flex items-center gap-3">
-      <span class="text-slate-400">Asesoría Directa:</span>
-      <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="font-bold text-dorado hover:text-dorado-bright flex items-center gap-1 transition-colors">
+      <span class="text-slate-400 text-[11px]">Línea Directa de Pedidos:</span>
+      <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="font-bold text-dorado hover:text-dorado-bright flex items-center gap-1.5 transition-colors">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
         <span>WhatsApp: 301 4768000</span>
       </a>
     </div>
   </aside>
 
-  <!-- 1. Header Inteligente Sticky -->
-  <header class="sticky top-0 z-40 glass-cyber-dark transition-all duration-300" id="mainHeader">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
+  <!-- 1. Header Inteligente de Alta Gama con Logotipo Oficial JR -->
+  <header class="sticky top-0 z-40 glass-vip-header transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3.5">
       <div class="flex items-center justify-between gap-3 sm:gap-6">
         
-        <!-- Logo de Marca: Jose Rivera Tech (Dorado y Negro) -->
-        <a href="#" class="flex items-center gap-2.5 shrink-0 group focus:outline-none" aria-label="Inicio Jose Rivera Tech">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-dorado via-dorado-bright to-amber-600 p-[1.5px] shadow-gold-sm">
-            <div class="w-full h-full bg-obsidian rounded-[14px] flex items-center justify-center text-dorado font-tech font-extrabold text-lg group-hover:scale-105 transition-transform">
-              JR
-            </div>
+        <!-- Logo Oficial JR: Imagen Original de Alta Resolución -->
+        <a href="#" class="flex items-center gap-3 shrink-0 group focus:outline-none" aria-label="Inicio JR Accesorios para Celulares">
+          <div class="logo-halo shrink-0">
+            <img src="assets/logo-jr.png" 
+                 alt="JR Accesorios para Celulares Logo Oficial" 
+                 class="w-12 h-12 sm:w-14 sm:h-14 object-contain rounded-full border border-dorado/40 group-hover:scale-105 transition-transform duration-300">
           </div>
+          
           <div class="flex flex-col">
             <div class="flex items-center gap-1.5">
-              <span class="font-tech text-base sm:text-xl font-bold tracking-tight text-white group-hover:text-dorado transition-colors">
+              <span class="font-vip text-base sm:text-xl font-bold tracking-wider text-white group-hover:text-dorado transition-colors">
                 JOSE RIVERA
               </span>
-              <span class="text-[9px] font-bold uppercase tracking-widest text-black bg-dorado px-1.5 py-0.5 rounded-md font-tech">
+              <span class="text-[9px] font-extrabold uppercase tracking-widest text-black bg-gradient-to-r from-dorado to-amber-500 px-1.5 py-0.5 rounded shadow-sm">
                 TECH
               </span>
             </div>
-            <span class="text-[9px] sm:text-[10px] tracking-wider text-slate-400 uppercase font-medium -mt-0.5">
-              Accesorios & Repuestos de Conveniencia
+            <span class="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-dorado font-semibold -mt-0.5">
+              Accesorios para Celulares · VIP
             </span>
           </div>
         </a>
 
-        <!-- Barra de Búsqueda Prominente con Placeholder Rotativo (Desktop & Tablet) -->
+        <!-- Barra de Búsqueda de Lujo (Desktop & Tablet) -->
         <div class="hidden md:flex flex-1 max-w-xl relative">
           <div class="relative w-full">
-            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-dorado">
               <i data-lucide="search" class="w-4 h-4"></i>
             </span>
             <input type="text" 
                    id="mainSearchInput" 
-                   placeholder="Busca tu control remoto, cable iPhone, cargador de carro..." 
-                   class="w-full pl-10 pr-9 py-2.5 rounded-full bg-black/60 border border-slate-700/80 text-white text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:border-dorado focus:ring-1 focus:ring-dorado transition-all">
+                   placeholder="Busca tu cargador GaN, cable iPhone, control Smart TV..." 
+                   class="w-full pl-10 pr-9 py-2.5 rounded-full bg-black/80 border border-dorado/30 text-white text-xs sm:text-sm placeholder:text-slate-400 focus:outline-none focus:border-dorado focus:ring-1 focus:ring-dorado shadow-inner transition-all">
             <button id="clearSearchBtn" class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white" title="Limpiar búsqueda">
               <i data-lucide="x" class="w-4 h-4"></i>
             </button>
           </div>
         </div>
 
-        <!-- Acciones: Carrito y WhatsApp -->
+        <!-- Acciones VIP: Carrito de Compras y Pedido WhatsApp -->
         <div class="flex items-center gap-2 sm:gap-3">
           
-          <!-- Botón de Carrito con Contador Reactivo -->
+          <!-- Botón de Carrito VIP con Contador Dinámico -->
           <button id="openCartBtn" onclick="Cart.openDrawer()" 
-                  class="relative p-2.5 sm:px-4 sm:py-2.5 rounded-full bg-slate-900 border border-slate-700 hover:border-dorado text-white transition-all flex items-center gap-2 active:scale-95 shadow-sm"
+                  class="relative p-2.5 sm:px-4 sm:py-2.5 rounded-full bg-slate-900/90 border border-dorado/40 hover:border-dorado text-white transition-all flex items-center gap-2 active:scale-95 shadow-sm group"
                   aria-label="Abrir carrito de compras">
-            <i data-lucide="shopping-cart" class="w-5 h-5 text-dorado"></i>
-            <span class="hidden sm:inline text-xs font-bold">Carrito</span>
-            <span class="cart-counter-badge hidden absolute -top-1 -right-1 bg-dorado text-black text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-md">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-dorado group-hover:scale-110 transition-transform"></i>
+            <span class="hidden sm:inline text-xs font-bold tracking-wide">Tu Pedido</span>
+            <span class="cart-counter-badge hidden absolute -top-1 -right-1 bg-gradient-to-r from-dorado to-amber-500 text-black text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-md">
               0
             </span>
           </button>
 
-          <!-- Botón Directo WhatsApp -->
-          <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20estoy%20viendo%20su%20cat%C3%A1logo%20y%20deseo%20hacer%20una%20consulta." 
+          <!-- Botón Directo WhatsApp Oficial VIP (+57 301 476 8000) -->
+          <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20deseo%20hacer%20un%20pedido%20de%20la%20colecci%C3%B3n%20VIP." 
              target="_blank" rel="noopener noreferrer" 
-             class="shimmer-gold inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold tracking-wide uppercase transition-all shadow-sm active:scale-95">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-            <span class="hidden sm:inline">WhatsApp</span>
+             class="btn-gold-vip inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all shadow-gold-sm active:scale-95">
+            <svg class="w-4 h-4 fill-current text-obsidian" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            <span class="hidden sm:inline">WhatsApp VIP</span>
           </a>
 
         </div>
       </div>
 
-      <!-- Barra de Búsqueda Móvil (visible sólo en pantallas pequeñas) -->
+      <!-- Barra de Búsqueda Móvil -->
       <div class="mt-2.5 md:hidden relative">
-        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-dorado">
           <i data-lucide="search" class="w-4 h-4"></i>
         </span>
         <input type="text" 
                id="mobileSearchInput" 
                oninput="document.getElementById('mainSearchInput').value = this.value; ProductFilters.searchQuery = this.value.toLowerCase(); ProductFilters.applyFilters();"
                placeholder="Busca cargador, cable, control, audífonos..." 
-               class="w-full pl-9 pr-4 py-2 rounded-xl bg-black/60 border border-slate-700 text-white text-xs placeholder:text-slate-400 focus:outline-none focus:border-dorado">
+               class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-black/90 border border-dorado/30 text-white text-xs placeholder:text-slate-400 focus:outline-none focus:border-dorado shadow-inner">
       </div>
     </div>
   </header>
@@ -152,43 +161,94 @@
   <!-- Contenido Principal -->
   <main class="flex-1">
 
-    <!-- 2. Hero Banner: Soluciones Rápidas de Conveniencia Tecnológica -->
-    <section class="relative py-8 sm:py-12 bg-gradient-to-b from-black via-obsidian-card to-obsidian border-b border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+    <!-- 2. Hero Section de Alta Gama: Showcase de Marca con Logotipo Central -->
+    <section class="relative py-10 sm:py-16 overflow-hidden border-b border-dorado/20">
+      
+      <!-- Fondos de Iluminación Radial Dorada -->
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-dorado/15 blur-[120px] rounded-full pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <div class="space-y-3 text-center lg:text-left max-w-2xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dorado/15 border border-dorado/40 text-dorado text-[11px] font-bold uppercase tracking-wider">
-              <span>⚡ Conveniencia Tech Inmediata</span>
-              <span>·</span>
-              <span>WhatsApp +57 301 476 8000</span>
-            </div>
+          <!-- Columna Izquierda: Mensaje Editorial de Prestigio -->
+          <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
             
-            <h1 class="font-tech text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight">
-              ¿Te quedaste sin carga o se te dañó el control? <span class="text-dorado">Soluciónalo aquí en minutos.</span>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-dorado/20 via-dorado/10 to-transparent border border-dorado/40 text-dorado-champan text-[11px] font-bold uppercase tracking-widest shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-dorado animate-pulse"></span>
+              <span>Colección VIP & Repuestos de Alta Gama</span>
+              <span>·</span>
+              <span class="text-white">Barranquilla & Colombia</span>
+            </div>
+
+            <h1 class="font-vip text-3xl sm:text-5xl lg:text-6xl text-white leading-[1.15] tracking-tight font-bold">
+              La distinción del <span class="text-gold-gradient">Lujo Tecnológico</span> en tus manos.
             </h1>
 
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Catálogo express para retiro inmediato en isla comercial o entrega rápida a domicilio. Cables reforzados antinudos, cargadores GaN de alta potencia, repuestos para TV / aire y accesorios de protección.
+            <p class="text-xs sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+              Bienvenido al espacio de conveniencia premium de <strong>Jose Rivera Tech</strong>. Cargadores GaN ultra rápidos, cables blindados con aleación balística, audio de alta definición y controles remotos originales listos para retiro inmediato en isla o entrega a domicilio.
             </p>
+
+            <!-- Acciones Principales -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 pt-2">
+              <a href="#catalogo" 
+                 class="btn-gold-vip px-7 py-3.5 rounded-full text-xs font-extrabold uppercase tracking-wider text-center flex items-center justify-center gap-2 active:scale-95">
+                <span>Explorar Colección VIP</span>
+                <span>↓</span>
+              </a>
+
+              <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20deseo%20asesor%C3%ADa%20para%20elegir%20el%20accesorio%20ideal." 
+                 target="_blank" rel="noopener noreferrer"
+                 class="px-6 py-3.5 rounded-full bg-black/80 hover:bg-slate-900 border border-dorado/40 text-dorado-champan text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center gap-2 active:scale-95 transition-all">
+                <span>💬 Asesoría Inmediata: 301 4768000</span>
+              </a>
+            </div>
+
+            <!-- 4 Pilares de Excelencia VIP -->
+            <div class="pt-6 sm:pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-center">
+              <div class="p-3 rounded-2xl bg-black/60 border border-dorado/20">
+                <span class="text-base sm:text-xl block mb-1">⚡</span>
+                <strong class="text-xs font-bold text-white block">GaN 65W Turbo</strong>
+                <span class="text-[10px] text-slate-400">Carga Ultra Rápida</span>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/60 border border-dorado/20">
+                <span class="text-base sm:text-xl block mb-1">🛡️</span>
+                <strong class="text-xs font-bold text-dorado block">100% Blindado</strong>
+                <span class="text-[10px] text-slate-400">Material Balístico</span>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/60 border border-dorado/20">
+                <span class="text-base sm:text-xl block mb-1">🏢</span>
+                <strong class="text-xs font-bold text-white block">Retiro en Isla</strong>
+                <span class="text-[10px] text-slate-400">Entrega Inmediata</span>
+              </div>
+              <div class="p-3 rounded-2xl bg-black/60 border border-dorado/20">
+                <span class="text-base sm:text-xl block mb-1">💎</span>
+                <strong class="text-xs font-bold text-dorado block">Garantía Gold</strong>
+                <span class="text-[10px] text-slate-400">Soporte Directo</span>
+              </div>
+            </div>
+
           </div>
 
-          <!-- 3 Tarjetas de Confianza Inmediata -->
-          <div class="grid grid-cols-3 gap-2.5 sm:gap-3 w-full lg:w-auto">
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
-              <span class="text-xl sm:text-2xl block mb-1">⚡</span>
-              <strong class="text-[11px] sm:text-xs font-bold text-white block">Entrega Hoy</strong>
-              <span class="text-[10px] text-slate-400">Sin esperas largas</span>
-            </div>
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
-              <span class="text-xl sm:text-2xl block mb-1">🛡️</span>
-              <strong class="text-[11px] sm:text-xs font-bold text-dorado block">Garantía</strong>
-              <span class="text-[10px] text-slate-400">Equipos probados</span>
-            </div>
-            <div class="p-3 sm:p-4 rounded-2xl bg-black/70 border border-slate-800 text-center">
-              <span class="text-xl sm:text-2xl block mb-1">💬</span>
-              <strong class="text-[11px] sm:text-xs font-bold text-emerald-400 block">Asesoría</strong>
-              <span class="text-[10px] text-slate-400">Atención WhatsApp</span>
+          <!-- Columna Derecha: Monograma y Emblema de Lujo -->
+          <div class="lg:col-span-5 flex justify-center mt-4 lg:mt-0">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-b from-dorado/40 via-dorado/10 to-transparent border border-dorado/50 shadow-gold flex items-center justify-center">
+              
+              <!-- Anillos Concéntricos Decorativos -->
+              <div class="absolute inset-4 rounded-full border border-dashed border-dorado/30 animate-spin-slow pointer-events-none"></div>
+              
+              <!-- Logo Oficial JR en Alta Resolución -->
+              <img src="assets/logo-jr.jpg" 
+                   alt="JR Accesorios para Celulares — Logo Oficial Jose Rivera Tech" 
+                   class="w-56 h-56 sm:w-72 sm:h-72 object-contain rounded-full shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
+              
+              <!-- Badge Flotante Inferior -->
+              <div class="absolute -bottom-3 bg-black/95 border border-dorado/60 px-4 py-1.5 rounded-full shadow-gold-sm flex items-center gap-2 z-20">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-[10px] sm:text-[11px] font-bold text-dorado-champan uppercase tracking-widest font-vip">
+                  Colección Oficial 2026
+                </span>
+              </div>
+
             </div>
           </div>
 
@@ -196,67 +256,67 @@
       </div>
     </section>
 
-    <!-- 3. Barra de Filtros Facetados (Categorías y Compatibilidad) -->
-    <section class="sticky top-[68px] sm:top-[76px] z-30 bg-obsidian/95 backdrop-blur-md border-b border-slate-800 py-3 shadow-md">
+    <!-- 3. Barra de Navegación Facetada VIP (Categorías & Compatibilidad) -->
+    <section id="catalogo" class="sticky top-[64px] sm:top-[74px] z-30 bg-obsidian/95 backdrop-blur-xl border-b border-dorado/25 py-3 shadow-2xl">
       <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-2.5">
         
         <!-- Fila 1: Píldoras de Categoría Principal -->
         <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs">
-          <button class="category-filter-pill active-cat-pill px-4 py-2 rounded-full border border-dorado bg-dorado text-black font-bold shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="todos">
-            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
-            <span>Todos</span>
+          <button class="category-filter-pill active-cat-pill px-4 py-2 rounded-full border border-dorado bg-dorado text-black font-extrabold shrink-0 transition-all active:scale-95 flex items-center gap-1.5 shadow-gold-sm" data-category="todos">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>Colección Completa</span>
           </button>
           
-          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="carga">
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-obsidian-card text-slate-300 hover:border-dorado/50 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="carga">
             <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-400"></i>
-            <span>Carga y Cables</span>
+            <span>Carga y Cables Turbo</span>
           </button>
 
-          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="audio">
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-obsidian-card text-slate-300 hover:border-dorado/50 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="audio">
             <i data-lucide="headphones" class="w-3.5 h-3.5 text-cyan-400"></i>
-            <span>Audio y Manos Libres</span>
+            <span>Audio Hi-Fi & Manos Libres</span>
           </button>
 
-          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="repuestos">
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-obsidian-card text-slate-300 hover:border-dorado/50 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="repuestos">
             <i data-lucide="tv" class="w-3.5 h-3.5 text-rose-400"></i>
-            <span>Controles y Repuestos</span>
+            <span>Controles Smart TV & Aire</span>
           </button>
 
-          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="gadgets">
+          <button class="category-filter-pill px-4 py-2 rounded-full border border-slate-800 bg-obsidian-card text-slate-300 hover:border-dorado/50 shrink-0 transition-all active:scale-95 flex items-center gap-1.5" data-category="gadgets">
             <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
-            <span>Protección y Gadgets</span>
+            <span>Protección Cerámica & Soportes</span>
           </button>
         </div>
 
         <!-- Fila 2: Selector Rápido de Compatibilidad y Ordenamiento -->
-        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/60">
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-800/80">
           
           <!-- Compatibilidad -->
           <div class="flex items-center gap-1.5 overflow-x-auto text-[11px]">
-            <span class="text-slate-400 text-[10px] uppercase font-bold mr-1 shrink-0">Equipo:</span>
+            <span class="text-dorado text-[10px] uppercase font-bold mr-1 shrink-0 font-vip">Compatibilidad:</span>
             
-            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-dorado bg-dorado/20 text-dorado font-semibold shrink-0 transition-colors" data-compat="all">
+            <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-dorado bg-dorado/20 text-dorado font-bold shrink-0 transition-colors" data-compat="all">
               Todos
             </button>
             <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="apple">
-              🍎 Apple / iOS
+              🍎 Apple / iPhone
             </button>
             <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="android">
-              🤖 Android
+              🤖 Android / Type-C
             </button>
             <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="tv">
-              📺 TV & Hogar
+              📺 Smart TV & Hogar
             </button>
             <button class="compat-filter-pill px-2.5 py-1 rounded-lg border border-slate-800 bg-black/60 text-slate-400 hover:text-white shrink-0 transition-colors" data-compat="carro">
-              🚗 Carro
+              🚗 Carro / Vehicular
             </button>
           </div>
 
           <!-- Contador y Selector de Orden -->
           <div class="flex items-center gap-2 text-xs">
             <span id="resultsCountBadge" class="text-slate-400 text-[11px] font-medium hidden sm:inline">0 productos</span>
-            <select id="catalogSortSelect" class="bg-black border border-slate-700 text-slate-300 text-[11px] rounded-lg px-2 py-1 focus:outline-none focus:border-dorado">
-              <option value="featured">Destacados</option>
+            <select id="catalogSortSelect" class="bg-black border border-dorado/30 text-slate-200 text-[11px] rounded-lg px-2.5 py-1 focus:outline-none focus:border-dorado">
+              <option value="featured">Destacados VIP</option>
               <option value="price-low">Precio: Menor a Mayor</option>
               <option value="price-high">Precio: Mayor a Menor</option>
               <option value="rating">Mejor Calificados</option>
@@ -268,8 +328,8 @@
       </div>
     </section>
 
-    <!-- 4. Cuadrícula de Productos (Catálogo Dinámico) -->
-    <section class="py-8 sm:py-12 bg-obsidian">
+    <!-- 4. Cuadrícula de Productos (Pedestales de Alta Gama) -->
+    <section class="py-10 sm:py-16 bg-obsidian">
       <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         
         <!-- Contenedor del Grid Dinámico -->
@@ -279,19 +339,19 @@
 
         <!-- Estado Vacío (Empty State) -->
         <div id="catalogEmptyState" class="hidden text-center py-16 px-4 space-y-4 max-w-md mx-auto">
-          <div class="w-16 h-16 rounded-full bg-slate-900 border border-slate-800 text-dorado flex items-center justify-center mx-auto text-2xl">
+          <div class="w-16 h-16 rounded-full bg-black border border-dorado/40 text-dorado flex items-center justify-center mx-auto text-2xl shadow-gold-sm">
             🔍
           </div>
-          <h3 class="font-tech text-lg font-bold text-white">No encontramos productos coincidentes</h3>
+          <h3 class="font-vip text-lg font-bold text-white">No se hallaron coincidencias</h3>
           <p class="text-xs text-slate-400">
-            Prueba ajustando los términos de búsqueda o cambiando el filtro de compatibilidad. También puedes consultarnos por WhatsApp.
+            Prueba ajustando el término de búsqueda o seleccionando otra categoría. También puedes escribirnos directamente por WhatsApp.
           </p>
           <div class="pt-2 flex flex-col sm:flex-row gap-2 justify-center">
-            <button onclick="ProductFilters.resetAllFilters()" class="px-5 py-2.5 rounded-full bg-dorado text-black font-bold text-xs uppercase tracking-wider active:scale-95 transition-all">
-              Ver Todo el Catálogo
+            <button onclick="ProductFilters.resetAllFilters()" class="btn-gold-vip px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider active:scale-95">
+              Ver Toda la Colección
             </button>
-            <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20estoy%20buscando%20un%20producto%20espec%C3%ADfico." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-slate-800 text-white font-bold text-xs uppercase tracking-wider active:scale-95 transition-all">
-              Preguntar por WhatsApp
+            <a href="https://wa.me/573014768000?text=Hola%20Jose%20Rivera%20Tech,%20busco%20un%20producto%20espec%C3%ADfico." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-slate-900 border border-slate-700 text-white font-bold text-xs uppercase tracking-wider active:scale-95 transition-all">
+              Consultar Asesor WhatsApp
             </a>
           </div>
         </div>
@@ -301,27 +361,25 @@
 
   </main>
 
-  <!-- 5. Drawer Desplegable del Carrito de Compras -->
+  <!-- 5. Drawer Desplegable del Carrito de Compras VIP -->
   <div id="cartBackdrop" 
-       class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300"
+       class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300"
        onclick="if(event.target === this) Cart.closeDrawer()"
        aria-hidden="true">
     
     <div id="cartDrawer" 
-         class="fixed top-0 right-0 bottom-0 w-full sm:w-[450px] bg-obsidian-card h-full shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out border-l border-slate-800 overflow-hidden z-50">
+         class="fixed top-0 right-0 bottom-0 w-full sm:w-[460px] bg-obsidian-card h-full shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out border-l border-dorado/30 overflow-hidden z-50">
       
-      <!-- Encabezado del Carrito -->
-      <div class="p-4 sm:p-5 bg-black border-b border-slate-800 flex items-center justify-between shrink-0">
-        <div class="flex items-center gap-2.5">
-          <div class="w-9 h-9 rounded-xl bg-dorado/20 text-dorado flex items-center justify-center font-bold">
-            🛒
-          </div>
+      <!-- Encabezado del Carrito VIP -->
+      <div class="p-4 sm:p-5 bg-black border-b border-dorado/20 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-3">
+          <img src="assets/logo-jr.png" alt="JR Logo" class="w-10 h-10 object-contain rounded-full border border-dorado/40 shrink-0">
           <div>
-            <h3 class="font-tech text-base font-bold text-white">Tu Pedido Tech</h3>
-            <p class="text-[11px] text-slate-400">Jose Rivera Tech · Envíos o Retiro Inmediato</p>
+            <h3 class="font-vip text-sm sm:text-base font-bold text-white tracking-wider">Orden de Compra VIP</h3>
+            <p class="text-[10px] text-dorado uppercase tracking-widest font-semibold">Jose Rivera Tech · Despacho Inmediato</p>
           </div>
         </div>
-        <button onclick="Cart.closeDrawer()" class="p-2 text-slate-400 hover:text-white rounded-lg transition-colors" aria-label="Cerrar carrito">
+        <button onclick="Cart.closeDrawer()" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Cerrar carrito">
           ✕
         </button>
       </div>
@@ -333,64 +391,66 @@
 
       <!-- Estado Vacío del Carrito -->
       <div id="cartEmptyState" class="hidden flex-1 flex flex-col items-center justify-center p-6 text-center space-y-3">
-        <span class="text-4xl">🛍️</span>
-        <h4 class="font-tech text-base font-bold text-white">Tu carrito está vacío</h4>
+        <div class="w-16 h-16 rounded-full bg-black border border-dorado/30 flex items-center justify-center text-3xl">
+          🛍️
+        </div>
+        <h4 class="font-vip text-base font-bold text-white">Tu carrito está vacío</h4>
         <p class="text-xs text-slate-400 max-w-xs">
-          Agrega cables, cargadores, controles o audífonos para armar tu cotización con envío inmediato.
+          Selecciona tus accesorios o repuestos de conveniencia para generar tu orden con entrega express.
         </p>
-        <button onclick="Cart.closeDrawer()" class="px-5 py-2.5 rounded-full bg-dorado text-black font-bold text-xs uppercase tracking-wider">
-          Explorar Catálogo
+        <button onclick="Cart.closeDrawer()" class="btn-gold-vip px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider">
+          Ver Productos VIP
         </button>
       </div>
 
       <!-- Checkout y Selector de Entrega (Footer del Carrito) -->
-      <div id="cartFooter" class="p-4 bg-black border-t border-slate-800 space-y-3.5 shrink-0">
+      <div id="cartFooter" class="p-4 bg-black border-t border-dorado/25 space-y-3.5 shrink-0">
         
         <!-- Selector Método de Entrega -->
         <div>
-          <label class="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+          <label class="block text-[11px] font-bold text-dorado uppercase tracking-wider mb-1.5 font-vip">
             Método de Entrega:
           </label>
           <div class="grid grid-cols-2 gap-2 text-xs">
-            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
+            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-800 bg-obsidian cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
               <input type="radio" name="checkoutDeliveryMethod" value="local" checked class="accent-dorado">
-              <span class="font-semibold text-white text-[11px]">🏢 Retiro en Local</span>
+              <span class="font-bold text-white text-[11px]">🏢 Retiro en Local / Isla</span>
             </label>
-            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-700 bg-slate-900 cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
+            <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-800 bg-obsidian cursor-pointer has-[:checked]:border-dorado has-[:checked]:bg-dorado/15">
               <input type="radio" name="checkoutDeliveryMethod" value="domicilio" class="accent-dorado">
-              <span class="font-semibold text-white text-[11px]">🛵 Domicilio Rápido</span>
+              <span class="font-bold text-white text-[11px]">🛵 Domicilio Inmediato</span>
             </label>
           </div>
         </div>
 
         <!-- Campos de Datos del Cliente -->
         <div class="space-y-2">
-          <input type="text" id="checkoutCustomerName" placeholder="Tu Nombre Completo..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+          <input type="text" id="checkoutCustomerName" placeholder="Tu Nombre Completo..." class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
           
           <div id="checkoutAddressContainer" class="hidden">
-            <input type="text" id="checkoutCustomerAddress" placeholder="Dirección exacta de entrega y ciudad..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+            <input type="text" id="checkoutCustomerAddress" placeholder="Dirección exacta de entrega y ciudad..." class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
           </div>
 
-          <input type="text" id="checkoutCustomerNotes" placeholder="Nota especial (ej: modelo exacto de celular o TV)..." class="w-full px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
+          <input type="text" id="checkoutCustomerNotes" placeholder="Nota especial (ej: modelo exacto de teléfono o TV)..." class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-slate-800 text-xs text-white placeholder:text-slate-500 focus:outline-none focus:border-dorado">
         </div>
 
         <!-- Subtotal -->
         <div class="flex items-center justify-between pt-2 border-t border-slate-800">
-          <span class="text-xs text-slate-400">Total a Pagar:</span>
-          <strong id="cartSubtotalAmount" class="font-tech text-xl font-extrabold text-dorado">
+          <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Total a Pagar:</span>
+          <strong id="cartSubtotalAmount" class="font-vip text-xl sm:text-2xl font-extrabold text-gold-gradient">
             $ 0
           </strong>
         </div>
 
         <!-- Botón Checkout WhatsApp -->
         <button id="cartCheckoutBtn" 
-                class="shimmer-gold w-full py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-          <span>Confirmar Pedido vía WhatsApp</span>
+                class="btn-gold-vip w-full py-3.5 px-4 rounded-2xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 active:scale-95 transition-all">
+          <svg class="w-4 h-4 fill-current text-obsidian" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span>Confirmar Orden vía WhatsApp</span>
         </button>
 
         <p class="text-[10px] text-center text-slate-400">
-          Atención inmediata · WhatsApp Oficial: <strong>+57 301 476 8000</strong>
+          Atención y despacho inmediato · WhatsApp Oficial: <strong>+57 301 476 8000</strong>
         </p>
 
       </div>
@@ -398,60 +458,63 @@
     </div>
   </div>
 
-  <!-- Botón Flotante de Carrito en Móvil (Dock Inferior) -->
+  <!-- Botón Flotante de Carrito Móvil -->
   <div class="fixed bottom-5 right-4 z-40 flex items-center gap-2">
-    <!-- Botón Flotante Carrito -->
     <button onclick="Cart.openDrawer()" 
-            class="relative px-4 py-3 rounded-full bg-dorado text-black font-extrabold text-xs shadow-gold flex items-center gap-2 active:scale-95 transition-all">
-      <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-      <span>Ver Carrito</span>
+            class="btn-gold-vip relative px-4 py-3 rounded-full text-xs font-extrabold shadow-gold flex items-center gap-2 active:scale-95 transition-all">
+      <i data-lucide="shopping-bag" class="w-4 h-4 text-obsidian"></i>
+      <span>Ver Orden</span>
       <span class="cart-counter-badge hidden bg-black text-dorado text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center">
         0
       </span>
     </button>
   </div>
 
-  <!-- 6. Footer Oficial -->
-  <footer class="bg-black text-slate-300 pt-12 pb-16 border-t border-slate-800 mt-auto">
+  <!-- 6. Footer Oficial de Alta Gama -->
+  <footer class="bg-black text-slate-300 pt-12 pb-16 border-t border-dorado/25 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-slate-800/80">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-slate-800">
         
         <div class="md:col-span-5 space-y-3">
-          <div class="flex items-center gap-2">
-            <span class="font-tech text-xl font-bold text-white">JOSE RIVERA TECH</span>
-            <span class="text-[9px] font-bold text-black bg-dorado px-1.5 py-0.5 rounded uppercase">Oficial</span>
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-jr.png" alt="JR Logo" class="w-12 h-12 object-contain rounded-full border border-dorado/40">
+            <div>
+              <span class="font-vip text-lg font-bold text-white block">JOSE RIVERA TECH</span>
+              <span class="text-[10px] text-dorado font-bold uppercase tracking-widest">JR Accesorios para Celulares</span>
+            </div>
           </div>
           <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
-            Especialistas en accesorios tecnológicos de alta durabilidad, cargadores inteligentes GaN, cables reforzados, audio y repuestos de conveniencia para tu celular y hogar.
+            Distinción, potencia y durabilidad. Selección rigurosa de tecnología de conveniencia, cargadores rápidos GaN certificados, cables blindados y repuestos para hogar y smartphone.
           </p>
           <div class="pt-1 flex items-center gap-3">
-            <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 font-bold hover:underline flex items-center gap-1">
-              <span>WhatsApp: +57 301 476 8000</span>
+            <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="text-xs text-emerald-400 font-bold hover:underline flex items-center gap-1.5">
+              <span>WhatsApp Directo: +57 301 476 8000</span>
             </a>
           </div>
         </div>
 
         <div class="md:col-span-4 space-y-2">
-          <h4 class="font-tech text-sm font-bold text-white uppercase tracking-wider">Atención y Entregas</h4>
-          <p class="text-xs text-slate-400">
+          <h4 class="font-vip text-sm font-bold text-white uppercase tracking-wider text-dorado">Atención y Entregas</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
             • Retiro inmediato en isla comercial<br>
             • Envíos rápidos en la ciudad y a nivel nacional<br>
-            • Horario de atención: Lunes a Sábado 9:00 AM - 8:00 PM
+            • Horario de atención: Lunes a Sábado 9:00 AM - 8:00 PM<br>
+            • Asesoría continua por WhatsApp
           </p>
         </div>
 
         <div class="md:col-span-3 space-y-2">
-          <h4 class="font-tech text-sm font-bold text-white uppercase tracking-wider">Garantía Directa</h4>
-          <p class="text-xs text-slate-400">
-            Todos nuestros productos cuentan con garantía por defectos de fábrica. Comprueba el funcionamiento de tus cables y cargadores al instante.
+          <h4 class="font-vip text-sm font-bold text-white uppercase tracking-wider text-dorado">Garantía Gold</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Todos nuestros accesorios cuentan con garantía directa de funcionamiento. Prueba de potencia y conectividad en cada producto entregado.
           </p>
         </div>
 
       </div>
 
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3 text-center sm:text-left">
-        <p>© 2026 Jose Rivera Tech · Todos los derechos reservados.</p>
+        <p>© 2026 Jose Rivera Tech — JR Accesorios para Celulares. Todos los derechos reservados.</p>
         <div class="flex items-center gap-4">
           <a href="https://wa.me/573014768000" target="_blank" rel="noopener noreferrer" class="text-dorado hover:underline">Soporte WhatsApp: 301 4768000</a>
         </div>
@@ -466,7 +529,7 @@
   <script src="js/cart.js"></script>
   <script src="js/filters.js"></script>
 
-  <!-- Inicialización de la SPA -->
+  <!-- Inicialización -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // 1. Inicializar Lucide Icons
@@ -480,7 +543,7 @@
       // 3. Inicializar Motor de Búsqueda y Filtros
       ProductFilters.init();
 
-      // Re-render Lucide Icons tras cargar el catálogo dinámico
+      // Refrescar íconos
       setTimeout(() => {
         if (window.lucide) lucide.createIcons();
       }, 100);

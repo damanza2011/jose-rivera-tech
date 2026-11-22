@@ -6,7 +6,7 @@
 const WHATSAPP_CONFIG = {
   phoneNumber: '573014768000',
   phoneFormatted: '+57 301 476 8000',
-  brandName: 'Jose Rivera Tech'
+  brandName: 'JR Accesorios para Celulares — Jose Rivera Tech'
 };
 
 /**
